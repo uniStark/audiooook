@@ -1,0 +1,25 @@
+services:
+  audiooook_web:
+    build: .
+    container_name: audiooook_web
+    ports:
+      - "3003:4001"
+    volumes:
+      # 服务端配置、封面和用户进度等持久化数据
+      - ./data:/app/server/data
+      # 有声书库目录；本地默认 ./data/audiobooks，生产可在 .env 中设置：
+      # AUDIOBOOK_HOST_PATH=/srv/audiobooks
+      - ${AUDIOBOOK_HOST_PATH:-./data/audiobooks}:/app/server/data/audiobooks
+    environment:
+      - NODE_ENV=production
+      - AUDIOBOOK_PATH=/app/server/data/audiobooks
+      # 公网访问密码，默认 audiooook；生产务必在 .env 中覆盖为强密码
+      - PUBLIC_ACCESS_PASSWORD=${PUBLIC_ACCESS_PASSWORD:-audiooook}
+      - PORT=4001
+      # 阿里云OSS配置（可选）
+      # - OSS_REGION=oss-cn-hangzhou
+      # - OSS_ACCESS_KEY_ID=your_access_key_id
+      # - OSS_ACCESS_KEY_SECRET=your_access_key_secret
+      # - OSS_BUCKET=your_bucket_name
+      # - OSS_PREFIX=audiobooks/
+    restart: unless-stopped

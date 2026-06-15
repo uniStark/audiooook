@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Audiooook Minimal Brand Options</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #f5f5f7;
+        --panel: #ffffff;
+        --line: rgba(60, 60, 67, .14);
+        --text: #1d1d1f;
+        --muted: #6e6e73;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--text);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      main { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 40px 0; }
+      h1 { margin: 0 0 8px; font-size: clamp(28px, 4vw, 48px); letter-spacing: -.04em; }
+      p { margin: 0 0 28px; color: var(--muted); }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 18px; }
+      .card {
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: var(--panel);
+        box-shadow: 0 18px 48px rgba(0, 0, 0, .08);
+      }
+      .head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+      .name { font-weight: 800; letter-spacing: -.02em; }
+      .tag { color: var(--muted); font-size: 12px; }
+      .assets { display: grid; grid-template-columns: 72px 1fr; gap: 14px; align-items: start; }
+      .icon {
+        width: 72px;
+        height: 72px;
+        border-radius: 18px;
+        box-shadow: 0 14px 34px rgba(0, 0, 0, .3);
+      }
+      .cover {
+        width: 100%;
+        aspect-ratio: 1;
+        border-radius: 22px;
+        box-shadow: 0 18px 42px rgba(0, 0, 0, .34);
+      }
+      .desc { margin-top: 12px; font-size: 13px; line-height: 1.6; color: #6e6e73; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>02 黑色耳机方向优化 5 版</h1>
+      <p>统一黑色纯底、白色极简符号，并且只保留一个耳机作为核心识别点。</p>
+      <section class="grid">
+        <article class="card">
+          <div class="head"><span class="name">01 单耳 + 书页</span><span class="tag">推荐 / 均衡</span></div>
+          <div class="assets"><img class="icon" src="./option-1-icon.svg" alt="01 icon" /><img class="cover" src="./option-1-cover.svg" alt="01 cover" /></div>
+          <div class="desc">保留书页语义，去掉右耳罩，单耳识别更轻，仍然明确是听书。</div>
+        </article>
+        <article class="card">
+          <div class="head"><span class="name">02 单耳 + 书块</span><span class="tag">更稳重</span></div>
+          <div class="assets"><img class="icon" src="./option-2-icon.svg" alt="02 icon" /><img class="cover" src="./option-2-cover.svg" alt="02 cover" /></div>
+          <div class="desc">右侧改成厚书块，更像实体书，图形更稳、面积更饱满。</div>
+        </article>
+        <article class="card">
+          <div class="head"><span class="name">03 单耳 + 唱片</span><span class="tag">更音频</span></div>
+          <div class="assets"><img class="icon" src="./option-3-icon.svg" alt="03 icon" /><img class="cover" src="./option-3-cover.svg" alt="03 cover" /></div>
+          <div class="desc">用圆形唱片强化音频属性，单耳机结构仍然清晰。</div>
+        </article>
+        <article class="card">
+          <div class="head"><span class="name">04 单耳 + 双页</span><span class="tag">更抽象</span></div>
+          <div class="assets"><img class="icon" src="./option-4-icon.svg" alt="04 icon" /><img class="cover" src="./option-4-cover.svg" alt="04 cover" /></div>
+          <div class="desc">双层书页更像打开的书，整体更 Apple、也更少细节。</div>
+        </article>
+        <article class="card">
+          <div class="head"><span class="name">05 单耳 + 点阵</span><span class="tag">更现代</span></div>
+          <div class="assets"><img class="icon" src="./option-5-icon.svg" alt="05 icon" /><img class="cover" src="./option-5-cover.svg" alt="05 cover" /></div>
+          <div class="desc">用四个圆点暗示章节/声波，细节少，偏现代工具 App。</div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

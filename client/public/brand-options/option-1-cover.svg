@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Option 1 single headphone cover">
+  <rect width="512" height="512" rx="44" fill="#1C1C1E"/>
+  <path d="M132 282v-62c0-77 53-129 124-129s124 52 124 129v62" fill="none" stroke="#F5F5F7" stroke-width="32" stroke-linecap="round"/>
+  <rect x="86" y="255" width="90" height="138" rx="42" fill="#F5F5F7"/>
+  <path d="M203 215c32-23 74-23 106 0v156c-32-23-74-23-106 0V215Z" fill="#F5F5F7"/>
+  <path d="M225 267h63M225 319h42" stroke="#1C1C1E" stroke-width="21" stroke-linecap="round"/>
+  <text x="256" y="444" text-anchor="middle" fill="#F5F5F7" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', Arial, sans-serif" font-size="34" font-weight="700">Audiooook</text>
+</svg>

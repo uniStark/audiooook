@@ -1,0 +1,17 @@
+{
+  "name": "audiooook-server",
+  "version": "1.0.0",
+  "description": "有声书服务端",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "ali-oss": "^6.21.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "multer": "^2.0.2",
+    "uuid": "^11.1.0"
+  }
+}

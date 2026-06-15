@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Option 3 single headphone icon">
+  <rect width="512" height="512" rx="112" fill="#1C1C1E"/>
+  <path d="M162 282v-54c0-61 41-102 94-102s94 41 94 102v54" fill="none" stroke="#F5F5F7" stroke-width="24" stroke-linecap="round"/>
+  <rect x="117" y="254" width="74" height="119" rx="37" fill="#F5F5F7"/>
+  <circle cx="258" cy="295" r="67" fill="#F5F5F7"/>
+  <circle cx="258" cy="295" r="25" fill="#1C1C1E"/>
+  <path d="M255 228v42M255 320v42" stroke="#1C1C1E" stroke-width="14" stroke-linecap="round"/>
+</svg>

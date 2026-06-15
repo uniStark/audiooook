@@ -1,0 +1,20 @@
+{
+  "name": "audiooook_web",
+  "version": "1.0.0",
+  "description": "在线听书Web应用 - 支持手机端的有声小说播放器",
+  "author": "Adrian Stark",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "docker:build": "docker build -t audiooook_web .",
+    "docker:run": "docker run -d -p 3001:4001 -v ./audiobooks:/audiobooks audiooook_web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

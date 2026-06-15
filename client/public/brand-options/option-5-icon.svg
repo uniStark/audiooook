@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Option 5 single headphone icon">
+  <rect width="512" height="512" rx="112" fill="#1C1C1E"/>
+  <path d="M154 280v-53c0-64 44-107 102-107s102 43 102 107v53" fill="none" stroke="#F5F5F7" stroke-width="28" stroke-linecap="round"/>
+  <rect x="110" y="253" width="77" height="121" rx="34" fill="#F5F5F7"/>
+  <path d="M215 215h74c22 0 40 18 40 40v63c0 22-18 40-40 40h-74V215Z" fill="#F5F5F7"/>
+  <path d="M244 257h1M285 257h1M244 318h1M285 318h1" stroke="#1C1C1E" stroke-width="18" stroke-linecap="round"/>
+</svg>

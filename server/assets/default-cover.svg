@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Audiooook default cover">
+  <rect width="512" height="512" rx="44" fill="#1C1C1E"/>
+  <path d="M137 282v-63c0-74 51-124 119-124s119 50 119 124v63" fill="none" stroke="#F5F5F7" stroke-width="27" stroke-linecap="round"/>
+  <rect x="90" y="252" width="88" height="140" rx="44" fill="#F5F5F7"/>
+  <circle cx="260" cy="298" r="79" fill="#F5F5F7"/>
+  <circle cx="260" cy="298" r="30" fill="#1C1C1E"/>
+  <path d="M257 219v49M257 328v49" stroke="#1C1C1E" stroke-width="16" stroke-linecap="round"/>
+  <text x="256" y="444" text-anchor="middle" fill="#F5F5F7" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', Arial, sans-serif" font-size="34" font-weight="700">Audiooook</text>
+</svg>
