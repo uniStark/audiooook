@@ -109,6 +109,12 @@ export default function UserGate({ children }) {
           {mode === 'create' ? '已有用户，返回登录' : '创建一个新用户'}
         </button>
       </motion.div>
+
+      {import.meta.env.VITE_DEMO_MODE && (
+        <footer className="fixed inset-x-0 bottom-0 pointer-events-none pb-[max(env(safe-area-inset-bottom),0.75rem)] text-center text-xs text-dark-400/70">
+          © 2026 STARK. Fueled by coffee.
+        </footer>
+      )}
     </div>
   );
 }
