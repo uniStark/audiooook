@@ -17,6 +17,13 @@
 [English](README.md) | [简体中文](README.zh-CN.md)
 
 <p align="center">
+  <a href="https://audiooook-demo.vercel.app"><b>🔗 Live UI Demo</b></a>
+</p>
+<p align="center">
+  <sub><b>Note:</b> the demo is a <b>front-end preview only</b> (no backend, no data) — login, library, and playback are disabled. Run the full app via Docker (see below).</sub>
+</p>
+
+<p align="center">
   <sub>Built with ❤️ by <b>Adrian Stark</b></sub>
 </p>
 

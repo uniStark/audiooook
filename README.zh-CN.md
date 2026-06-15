@@ -17,6 +17,13 @@
 [English](README.md) | [简体中文](README.zh-CN.md)
 
 <p align="center">
+  <a href="https://audiooook-demo.vercel.app"><b>🔗 在线 UI 预览 Demo</b></a>
+</p>
+<p align="center">
+  <sub><b>说明：</b>该 Demo 仅为<b>前端界面预览</b>（无后端、无数据）——登录、书库、播放均不可用。完整功能请用 Docker 自托管（见下文）。</sub>
+</p>
+
+<p align="center">
   <sub>由 <b>Adrian Stark</b> 用 ❤️ 打造</sub>
 </p>
 

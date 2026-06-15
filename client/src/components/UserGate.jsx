@@ -38,6 +38,12 @@ export default function UserGate({ children }) {
         animate={{ opacity: 1, y: 0, scale: 1 }}
         className="glass-card w-full max-w-[420px] p-5"
       >
+        {import.meta.env.VITE_DEMO_MODE && (
+          <div className="mb-5 rounded-2xl bg-primary-500/10 ring-1 ring-primary-500/25 px-4 py-3 text-xs leading-5 text-primary-300">
+            🔍 在线 UI 预览 Demo — 仅展示界面，后端未接入，登录 / 书库 / 播放不可用。
+            完整功能请参考 README 自托管部署（Docker）。
+          </div>
+        )}
         <div className="mb-6">
           <div className="w-14 h-14 rounded-3xl bg-primary-500 text-white grid place-items-center text-2xl font-bold shadow-lg shadow-primary-500/25 mb-4">
             A
@@ -86,7 +92,7 @@ export default function UserGate({ children }) {
             autoComplete={mode === 'create' ? 'new-password' : 'current-password'}
             required
           />
-          {error && <div className="text-sm text-red-400 bg-red-500/10 rounded-2xl px-3 py-2">{error}</div>}
+          {error && !import.meta.env.VITE_DEMO_MODE && <div className="text-sm text-red-400 bg-red-500/10 rounded-2xl px-3 py-2">{error}</div>}
           <button className="btn-primary w-full" disabled={isBusy}>
             {isBusy ? '处理中...' : mode === 'create' ? '创建并进入' : '进入书库'}
           </button>
